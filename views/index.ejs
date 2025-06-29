@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node AI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>   
+
+    <div class="lower">  
+
+        <div class="leftboxouter">
+            <div class="panel">
+                <span class="left"> <img class="history" id="h1" src="pics/min4.png"> </span>
+                <span class="left" id="newpage"> <a><img src="pics/newpage.jpg" alt=""></a></span>            
+            </div>            
+            <div class="leftbox">
+
+            </div>
+        </div>
+
+        <div class="rightbox"> <!-- FLEX -->
+            <img class="history" id="h2" src="pics/hmbgblank.png">
+            
+
+            <div class="main"><!-- FLEX - COLUMN -->
+
+                <div class="response"> <!-- FLEX - COLUMN -->
+                    <h1 class="greeting">Welcome <%=username%></h1>
+                    <a href="/login"><img src="pics/man.png" alt=""></a>                    
+                </div>
+
+                <div class="bottom">
+                    <form action="">
+                        <textarea name="qn" placeholder="Type your query or paste / drop your pdf or doc"></textarea>
+                    </form>           
+                    <div id="filecheck">
+
+                    </div>        
+                </div>
+
+            </div> 
+        </div>
+
+    </div>
+
+    <script type="module" src="index.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/generative-ai@latest/dist/index.mjs"></script>    
+</body>
+
+</html>
